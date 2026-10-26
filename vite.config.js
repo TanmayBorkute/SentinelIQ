@@ -9,6 +9,11 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
+  preview: {
+    host: true,
+    allowedHosts: true, // Render serves from <name>.onrender.com
+    // allowedHosts: ['sentineliq-mm6y.onrender.com'], // stricter alternative
+  },
   build: {
     outDir: 'dist',
     sourcemap: false,
